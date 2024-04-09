@@ -1,0 +1,56 @@
+body {
+  background-image: url("D:\react\16myp\src\assets\DOJO-3 img.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+.shadow-blue {
+  text-shadow: 1px 1px 1px rgb(1, 82, 114); /* Blue shadow */
+}
+.koushuku {
+  text-shadow: rgb(114, 61, 163) 1px -2px 3px, rgb(50, 48, 48) 1px -1px 3px;
+}
+.Hstate{
+  text-shadow: rgb(61, 154, 163) 1px -1px 2px, rgb(0, 48, 57) 1px -1px 3px;
+}
+.Distc{
+  color: aliceblue;
+  text-shadow: rgb(0, 162, 243) 1px -1px 2px, rgb(0, 0, 0) 1px -1px 3px;
+}
+.fclass {
+  text-shadow: black 1px -2px 4px, rgb(36, 48, 48) 1px -1px 3px,
+    rgb(25, 195, 210) 1px -1px 7px;
+}
+.b1:hover,
+.b2:hover {
+  transition: 0.5s;
+  background-color: rgb(70, 49, 96);
+  color: black;
+}
+
+.img {
+  object-fit: fill;
+  transition: 0.5s;
+}
+
+.main:hover .img {
+  border-radius: 25%;
+}
+
+::selection {
+  color: rgb(74, 35, 135);
+}
+
+.btn:hover {
+  background-color: rgb(0, 65, 100);
+  transition: 0.5s;
+  color: rgb(0, 161, 131);
+}
+
+.main:hover  .name.price {
+  color: whitesmoke;
+  transition: 0.8s;
+}

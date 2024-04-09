@@ -1,0 +1,143 @@
+[
+  {
+    "name": "Andhra Pradesh",
+    "districts": [
+      "Anantapur",
+      "Chittoor",
+      "East Godavari",
+      "Guntur",
+      "Krishna",
+      "Kurnool",
+      "Prakasam",
+      "Srikakulam",
+      "YSR District, Kadapa (Cuddapah)"
+    ]
+  },
+  {
+    "name": "Arunachal Pradesh",
+    "districts": [
+      "Tawang",
+      "West Kameng",
+      "East Kameng",
+      "Papum Pare",
+      "Kurung Kumey",
+      "Kra Daadi",
+      "Lower Subansiri",
+      "Lohit",
+      "Namsai",
+      "Changlang",
+      "Tirap",
+      "Longding"
+    ]
+  },
+  {
+    "name": "Assam",
+    "districts": [
+      "Baksa",
+      "Barpeta",
+      "Biswanath",
+      "Bongaigaon",
+      "Cachar",
+      "Charaideo",
+      "Chirang",
+      "Jorhat",
+      "Kamrup",
+      "Kamrup Metropolitan",
+      "Karbi Anglong",
+      "Karimganj",
+
+      "Dima Hasao (North Cachar Hills)",
+      "Sivasagar",
+      "Sonitpur",
+      "South Salamara-Mankachar",
+      "Tinsukia",
+      "Udalguri",
+      "West Karbi Anglong"
+    ]
+  },
+  {
+    "name": "Bihar",
+    "districts": [
+      "Araria",
+      "Arwal",
+      "Aurangabad",
+      "Banka",
+      "Begusarai",
+      "Sitamarhi",
+      "Siwan",
+      "Supaul",
+      "Vaishali",
+      "West Champaran"
+    ]
+  },
+  {
+    "name": "Chhattisgarh",
+    "districts": [
+      "Balod",
+      "Baloda Bazar",
+      "Balrampur",
+      "Bastar",
+
+      "Mahasamund",
+      "Mungeli",
+      "Narayanpur",
+      "Raigarh",
+      "Raipur",
+      "Rajnandgaon",
+      "Sukma",
+      "Surajpur",
+      "Surguja"
+    ]
+  },
+  {
+    "name": "Goa",
+    "districts": ["North Goa", "South Goa"]
+  },
+  {
+    "name": "Gujarat",
+    "districts": [
+      "Ahmedabad",
+      "Amreli",
+      "Anand",
+      "Bharuch",
+      "Gandhinagar",
+      "Gir Somnath",
+      "Jamnagar",
+      "Kachchh",
+      "Navsari",
+      "Panchmahal (Godhra)",
+      "Rajkot",
+      "Surat",
+      "Tapi (Vyara)",
+      "Vadodara",
+      "Valsad"
+    ]
+  },
+  {
+    "name": "Haryana",
+    "districts": [
+      "Ambala",
+      "Bhiwani",
+      "Charkhi Dadri",
+      "Faridabad",
+      "Fatehabad",
+      "Gurugram (Gurgaon)",
+      "Hisar",
+      "Jhajjar",
+      "Jind",
+      "Kaithal",
+      "Karnal",
+      "Kurukshetra",
+      "Mahendragarh",
+      "Nuh",
+      "Palwal",
+      "Panchkula",
+      "Panipat",
+      "Rewari",
+      "Rohtak",
+      "Sirsa",
+      "Sonipat",
+      "Yamunanagar"
+    ]
+  }
+]
