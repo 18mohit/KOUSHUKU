@@ -4,15 +4,15 @@ function History() {
   return (
     <div>
       <div className="bg-slate-500">
-        <h1 className=" text-[2vw] font-semibold bg-slate-900 max-w-[15vw] rounded-tl rounded-bl rounded-3xl border-gray-500">
-          <span className="ml-[2vw]">Our History</span>
+        <h1 className=" sm:text-[2vw] text-[5vw] font-semibold bg-slate-900 sm:max-w-[15vw] max-w-[35vw] rounded-tl rounded-bl rounded-3xl border-gray-500 ">
+          <span className=" p-2 ml-[2vw]">Our History</span>
         </h1>
-        <div className="flex flex-row font-serif pt-3 ">
+        <div className="sm:flex sm:flex-row font-serif pt-3 ">
           <div>
-            <img className="w-[20vw] ml-[1vw]" src="H2.jpg" alt="" />
+            <img className="sm:w-[20vw] w-[80vw] sm:ml-[1vw] ml-[10vw] " src="H2.jpg" alt="" />
           </div>
           <div>
-            <h1 className=" max-w-[75vw] ml-[2vw] text-[1.2vw] ">
+            <h1 className=" sm:max-w-[75vw] ml-[2vw] sm:text-[1.2vw] text-[5vw] ">
               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; This
               article is about the martial art. For other uses, see Karate
               (disambiguation). "Karateka" redirects here. For the video game,
@@ -76,9 +76,9 @@ function History() {
           </div>
         </div>
 
-        <div className="flex flex-row font-serif pt-[2vw]">
+        <div className="sm:flex sm:flex-row font-serif pt-[2vw]">
           <div>
-            <h1 className="max-w-[75vw] ml-[1vw] text-[1.2vw]">
+            <h1 className="sm:max-w-[75vw] ml-[1vw] sm:text-[1.2vw] text-[4vw] ">
               Around the 1820s, Matsumura Sōkon (1809–1899) began teaching
               Okinawa-te.[50] Matsumura was, according to one theory, a student
               of Sakugawa. Matsumura's style later became the origin of many
@@ -98,19 +98,16 @@ function History() {
               <a href="https://en.wikipedia.org/wiki/Gichin_Funakoshi" target="_blank" className="text-blue-950 font-semibold underline">
               <span>Gichin Funakoshi</span>
               </a>
-               
-               
                 and 
                 <a href="https://en.wikipedia.org/wiki/Kenwa_Mabuni" target="_blank" className="text-blue-950 font-semibold underline">
               <span>Kenwa Mabuni.</span>
               </a>
-                
                  Itosu is
               sometimes referred to as "the Grandfather of Modern Karate."[52]
             </h1>
           </div>
           <div>
-            <img className="w-[20vw] ml-[1vw]" src="H1.jpeg" alt="img2" />
+            <img className="sm:w-[20vw] w-[85vw] sm:ml-[1vw] ml-[7vw] " src="H1.jpeg" alt="img2" />
           </div>
         </div>
       </div>

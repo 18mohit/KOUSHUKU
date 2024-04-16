@@ -4,16 +4,16 @@ function Nowadays() {
   return (
     <>
       <div className="bg-slate-500 pt-[1vw]">
-        <h1 className="text-[2vw] font-semibold bg-slate-900 max-w-[15vw] rounded-tl rounded-bl rounded-3xl border-gray-500">
+      <h1 className=" sm:text-[2vw] text-[5vw] font-semibold bg-slate-900 sm:max-w-[15vw] max-w-[35vw] rounded-tl rounded-bl rounded-3xl border-gray-500 ">
           <span className="ml-[2vw]">Nowadays</span>
         </h1>
 
-        <div className="flex flex-row font-serif pt-3">
+        <div className="sm:flex sm:flex-row font-serif pt-3">
           <div>
-            <img className="w-[40vw] h-[20vw] ml-[1vw]" src="dojo.jpg" alt="" />
+            <img className="sm:w-[20vw] w-[80vw] sm:ml-[1vw] ml-[10vw] " src="dojo.jpg" alt="" />
           </div>
           <div>
-            <h1 className=" max-w-[75vw] ml-[2vw] text-[1.2vw] ">
+          <h1 className=" sm:max-w-[75vw] ml-[2vw] sm:text-[1.2vw] text-[5vw] ">
               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Nowadays,
               our karate dojo has expanded its presence significantly across
               India, boasting over 10 branches spread throughout the country.
@@ -39,9 +39,9 @@ function Nowadays() {
           </div>
         </div>
 
-        <div className="flex flex-row font-serif pt-[2vw]">
+        <div className="sm:flex sm:flex-row font-serif pt-[2vw]">
           <div>
-            <h1 className="max-w-[67vw] ml-[1vw] text-[1.2vw]">
+            <h1 className="sm:max-w-[75vw] ml-[1vw] sm:text-[1.2vw] text-[4vw] ">
               Our karate dojo not only excels in training dedicated martial
               artists but also takes pride in its achievements in camps and
               tournaments. Each year, we organize immersive training camps that
@@ -72,7 +72,7 @@ function Nowadays() {
           </div>
           <div>
             <img
-              className="w-[30vw] h-[20vw] ml-[1vw]"
+              className="sm:w-[20vw] w-[80vw] sm:ml-[1vw] ml-[10vw] "
               src="AboutUS.jpg"
               alt="img2"
             />
