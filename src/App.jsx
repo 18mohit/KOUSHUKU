@@ -10,6 +10,7 @@ import Exam from "./componetnts/Exam";
 import StoreHome from "./componetnts/store/StoreHome";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import BranchHome from "./componetnts/OurBranch/BranchHome";
+import Ahome from "./componetnts/About_us/Ahome";
 
 function App() {
   return (
@@ -22,6 +23,8 @@ function App() {
           <Route path="/Exam" element={<Exam />} />
           <Route path="/StoreHome" element={<StoreHome />} />
           <Route path="/OurBranch" element={<BranchHome />} />
+          <Route path="/AboutUS" element={< Ahome/>} />
+
         </Routes>
         <Footer />
       </BrowserRouter>

@@ -17,7 +17,6 @@ function Header() {
   const toggleDropdown = () => {
     setIsDropdownOpen(!isDropdownOpen);
   };
-
   return (
     <>
       <div className="bg-gray-900 bg-opacity-90 text-center justify-center sticky top-0 z-20">
