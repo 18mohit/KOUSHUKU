@@ -69,7 +69,7 @@ function Exam() {
   };
 
   const onChangeHandler = (e) => {
-    // console.log(e.target.value);
+    // console.log(e.target.value); 
     setSaveData({
       ...saveData,
       [e.target.name]: e.target.value,
@@ -310,6 +310,7 @@ function Exam() {
                 <button
                   onClick={() => console.log(saveData)}
                   type="submit"
+                  id="Exam_Submit"
                   className="sm:w-[10vw] w-[25vw] p-3 border mt-[5vw] bg-gray-950 hover:bg-black rounded-lg"
                 >
                   Submit

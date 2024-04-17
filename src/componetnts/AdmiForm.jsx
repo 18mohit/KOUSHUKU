@@ -218,6 +218,7 @@ function AdmiForm() {
                 <button
                   onClick={() => console.log(saveData)}
                   type="submit"
+                  id="Admi_Submit"
                   className="sm:w-[10vw] w-[25vw] p-3 border mt-[5vw] bg-gray-950 hover:bg-black rounded-lg"
                 >
                   Submit
