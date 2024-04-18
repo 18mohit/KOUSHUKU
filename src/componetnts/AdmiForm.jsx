@@ -66,6 +66,16 @@ function AdmiForm() {
   useEffect((f) => {
     AOS.init({ duration: 1000 });
   }, []);
+
+  // show data for admin
+  let date = Date.now();
+  /* 2. Define your event. */
+  function newsletterSignup() {
+    gtag('event', 'newsletter_signup', {
+    'time': date,
+    });
+}
+
   return (
     <>
       <div className="bg-black bg-opacity-95 w-full text-white">
@@ -216,7 +226,7 @@ function AdmiForm() {
               </div>
               <div className="text-center">
                 <button
-                  onClick={() => console.log(saveData)}
+                  onClick={() => newsletterSignup}
                   type="submit"
                   id="Admi_Submit"
                   className="sm:w-[10vw] w-[25vw] p-3 border mt-[5vw] bg-gray-950 hover:bg-black rounded-lg"
