@@ -118,11 +118,19 @@ function Exam() {
     AOS.init({ duration: 1000 });
   }, []);
 
-  function newsletterSignup() {
-    gtag('event', 'newsletter_signup', {
-    'time': date,
-    });
+//   function newsletterSignup() {
+//     gtag('event', 'newsletter_signup', {
+//     'time': date,
+//     }); 
+// }
+
+function newsletterSignup() {
+  const timestamp = new Date(); // Get the current timestamp
+  gtag('event', 'user_subscribed_to_newsletter', {
+      'time': timestamp.toISOString(), // Convert timestamp to ISO format
+  });
 }
+
 
   return (
     <>
