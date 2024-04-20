@@ -47,7 +47,7 @@ function First() {
             <div className="flex mt-4">
               <span className="mt-1 mr-1">
                 <RiArrowRightSFill />
-              </span>
+              </span> 
               <span> Learn any type of Martial Art.</span>
             </div>
             <div className="flex mt-4">
@@ -72,7 +72,7 @@ function First() {
                     logout({
                       logoutParams: { returnTo: window.location.origin },
                     })
-                  }
+                  }  
                 >
                   Logout
                 </button>
