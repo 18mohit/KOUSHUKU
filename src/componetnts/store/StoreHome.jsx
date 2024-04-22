@@ -22,17 +22,17 @@ function StoreHome() {
 // add E-commerce tracking code
   useEffect(() => {
     // Initialize ReactGA with your GA4 Measurement ID
-    ReactGA.initialize('GA_MEASUREMENT_ID');
+    React.initialize('GTM-MHN8F3GD');
   }, []);
 
   useEffect(() => {
     // Track page view on component mount
-    ReactGA.pageview(window.location.pathname + window.location.search);
+    React.pageview(window.location.pathname + window.location.search);
   }, []);
 
   useEffect(() => {
     // Track ecommerce event when component updates or mounts
-    ReactGA.event({
+    React.event({
       category: 'Ecommerce',
       action: 'Purchase',
       transaction_id: 'T_12345',
@@ -40,18 +40,18 @@ function StoreHome() {
       currency: 'USD',
       items: [
         {
-          id: 'SKU_12345',
-          name: 'Stan and Friends Tee',
-          category: 'Apparel',
-          price: 10.01,
+          id: '1',
+          name: 'Girls karate uniform',
+          category: 'Uniform',
+          price: 199,
           quantity: 3,
           discount: 2.22
         },
         {
-          id: 'SKU_12346',
-          name: 'Google Grey Women\'s Tee',
-          category: 'Apparel',
-          price: 21.01,
+          id: '2',
+          pname: 'Boys karate uniform',
+          category: 'Uniform',
+          price: 220,
           quantity: 2,
           discount: 3.33,
           promotion_id: 'P_12345',
