@@ -3,6 +3,8 @@ import StoreData from "./StoreData";
 import Product from "./Product";
 import Button from "./Button";
 import Cart from "./Cart";
+import ReactGA from 'react-ga';
+
 
 function StoreHome() {
   const [items, setItems] = useState([]);
@@ -20,19 +22,16 @@ function StoreHome() {
   };
   
 // add E-commerce tracking code
-  useEffect(() => {
-    // Initialize ReactGA with your GA4 Measurement ID
-    React.initialize('GTM-MHN8F3GD');
-  }, []);
+useEffect(() => {
+  // Initialize ReactGA with your GA4 Measurement ID
+  ReactGA.initialize('GA_MEASUREMENT_ID');
+  // Track page view on component mount
+  ReactGA.pageview(window.location.pathname + window.location.search);
+}, []);
 
-  useEffect(() => {
-    // Track page view on component mount
-    React.pageview(window.location.pathname + window.location.search);
-  }, []);
-
-  useEffect(() => {
-    // Track ecommerce event when component updates or mounts
-    React.event({
+useEffect(() => {
+  // Track ecommerce event when component updates or mounts
+  ReactGA.event({
       category: 'Ecommerce',
       action: 'Purchase',
       transaction_id: 'T_12345',
