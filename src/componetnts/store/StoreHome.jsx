@@ -23,42 +23,38 @@ function StoreHome() {
   
 // add E-commerce tracking code
 useEffect(() => {
-  // Initialize ReactGA with your GA4 Measurement ID
-  ReactGA.initialize('GA_MEASUREMENT_ID');
-  // Track page view on component mount
-  ReactGA.pageview(window.location.pathname + window.location.search);
-}, []);
-
-useEffect(() => {
-  // Track ecommerce event when component updates or mounts
-  ReactGA.event({
-      category: 'Ecommerce',
-      action: 'Purchase',
-      transaction_id: 'T_12345',
-      value: 72.05,
-      currency: 'USD',
+  // Track the view_item event when the component mounts
+  window.dataLayer.push({
+    event: "view_item",
+    ecommerce: {
+      currency: "USD",
+      value: 30.03,
       items: [
         {
-          id: '1',
-          name: 'Girls karate uniform',
-          category: 'Uniform',
+          item_id: "1",
+          item_name: "Girls karate uniform",
+          affiliation: "Google Merchandise Store",
+          coupon: "SUMMER_FUN",
+          discount: 2.22,
+          index: 0,
+          item_brand: "Google",
+          item_category: "Apparel",
+          item_category2: "Adult",
+          item_category3: "Shirts",
+          item_category4: "Crew",
+          item_category5: "Short sleeve",
+          item_list_id: "related_products",
+          item_list_name: "Related Products",
+          item_variant: "green",
+          location_id: "ChIJIQBpAG2ahYAR_6128GcTUEo",
           price: 199,
-          quantity: 3,
-          discount: 2.22
-        },
-        {
-          id: '2',
-          pname: 'Boys karate uniform',
-          category: 'Uniform',
-          price: 220,
-          quantity: 2,
-          discount: 3.33,
-          promotion_id: 'P_12345',
-          promotion_name: 'Summer Sale'
+          quantity: 3
         }
       ]
-    });
-  }, []);
+    }
+  });
+}, []);
+
 
   return (
     <>
