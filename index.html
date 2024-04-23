@@ -38,6 +38,19 @@
   gtag('config', 'GTM-MHN8F3GD');
 </script> -->
 
+<script>
+  document.addEventListener("click", function(event){
+    if (event.target.tagName === "BUTTON") {
+      console.log(event);
+   let gtag =  gtag('event','click_on_GetStart',{
+        'Button_text':event.target.innerText,
+        'Button_offset': event.target.offsetTop,
+        'Button_nameSpaceURI':event.target.namespaceURI
+      })
+    }
+  })
+</script>
+
 
   </body>
 </html>
