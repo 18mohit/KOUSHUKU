@@ -42,14 +42,20 @@
   document.addEventListener("click", function(event){
     if (event.target.tagName === "BUTTON") {
       console.log(event);
-       gtag =  gtag('event','click_on_GetStart',{
+      // Declare gtag as a function or variable
+      // Here we use let to declare gtag as a variable
+      let gtag = window.gtag || function() { /* dummy function */ };
+
+      // Call gtag event tracking function
+      gtag('event', 'click_on_GetStart', {
         event_category: 'Button Click',
-            event_label: event.target.innerText,
-            event_offset: event.target.offsetTop,
-      })
+        event_label: event.target.innerText,
+        event_offset: event.target.offsetTop,
+      });
     }
-  })
+  });
 </script>
+
 
 
   </body>
