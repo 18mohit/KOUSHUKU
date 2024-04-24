@@ -44,7 +44,7 @@ function ItemCart({ id, pname, price, src, qty }) {
                 dispatch(removeFromCart({ id, pname, price, qty, src }))
               }
               className="delete ml-[1vw] cursor-pointer"
-              id="delete_from_cart"
+              id="delete_cart"
             >
               <MdDelete />
             </h1>
