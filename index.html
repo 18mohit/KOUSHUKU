@@ -42,10 +42,10 @@
   document.addEventListener("click", function(event){
     if (event.target.tagName === "BUTTON") {
       console.log(event);
-   let gtag =  gtag('event','click_on_GetStart',{
-        'Button_text':event.target.innerText,
-        'Button_offset': event.target.offsetTop,
-        'Button_nameSpaceURI':event.target.namespaceURI
+       gtag =  gtag('event','click_on_GetStart',{
+        event_category: 'Button Click',
+            event_label: event.target.innerText,
+            event_offset: event.target.offsetTop,
       })
     }
   })
