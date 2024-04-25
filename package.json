@@ -12,9 +12,11 @@
   "dependencies": {
     "@auth0/auth0-react": "^2.2.4",
     "@react-google-maps/api": "^2.19.3",
+    "@react-oauth/google": "^0.12.1",
     "@reduxjs/toolkit": "^2.2.1",
     "aos": "^2.3.4",
     "axios": "^1.6.7",
+    "jwt-decode": "^4.0.0",
     "loadjs": "^4.3.0-rc1",
     "react": "^18.2.0",
     "react-countup": "^6.5.0",

@@ -1,21 +1,49 @@
 import React, { useEffect } from "react";
-// import bg1 from "../Home/bg1.png";
 import bg1 from "../assets/bg1.png";
-// import bg1 from "./assets/bg1.jpg";
 import { RiArrowRightSFill } from "react-icons/ri";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useAuth0 } from "@auth0/auth0-react";
+import { GoogleOAuthProvider } from '@react-oauth/google';
+import { GoogleLogin } from "@react-oauth/google";
+
+// import { gapi } from "gapi-script";
 
 function First() {
+  const { isAuthenticated, loginWithRedirect, logout } = useAuth0(); // Destructure isAuthenticated from useAuth0
+  function onSignIn(googleUser) {
+    // Access user profile information directly from googleUser object
+    const profile = {
+      id: googleUser.getId(),
+      name: googleUser.getName(),
+      imageUrl: googleUser.getImageUrl(),
+      email: googleUser.getEmail()
+    };
+    console.log('ID: ' + profile.id); // Do not send to your backend! Use an ID token instead.
+    console.log('Name: ' + profile.name);
+    console.log('Image URL: ' + profile.imageUrl);
+    console.log('Email: ' + profile.email);
+  }
+  
+  
+  function signOut() {
+    var auth2 = gapi.auth2.getAuthInstance();
+    auth2.signOut().then(function () {
+      console.log('User signed out.');
+    });
+  }
   useEffect((f) => {
     AOS.init({ duration: 1000 });
   }, []);
 
   // this is log in
-  const { loginWithRedirect, logout,isAuthenticated } = useAuth0();
+  // const { loginWithRedirect, logout,isAuthenticated } = useAuth0();
 
   return (
+
+    <GoogleOAuthProvider>
+
+    
     <div className="bg-gray-600  bg-opacity-80 mt-0 font-serif f">
       <div className="flex justify-start ml-5">
         <div className="p">
@@ -66,25 +94,22 @@ function First() {
           <div className="flex mt-8 space-x-10 ml-[28vw] mb-7">
             {isAuthenticated ? (
               <div>
-                <button
+                {/* <button
                   className="b2 bg-gray-900 w-[25vw] sm:w-[8vw] rounded-xl border text-white p-3"
-                  onClick={() =>
-                    logout({
-                      logoutParams: { returnTo: window.location.origin },
-                    })
-                  }  
+                  onClick={signOut}  
                 >
-                  Logout
-                </button>
+                  SignOut
+                </button> */}
               </div>
             ) : (
               <div>
-                <button
-                  className="b1 bg-gray-900 w-[25vw] sm:w-[8vw]  rounded-xl border text-white p-3 "
-                  onClick={() => loginWithRedirect()}
+                {/* <button
+                  data-onsuccess="onSignIn"
+                  className="g-signin2 b1 bg-gray-900 w-[25vw] sm:w-[8vw]  rounded-xl border text-white p-3 "
+                  onClick={onSignIn}
                 >
-                  Log in
-                </button>
+                  Sign in
+                </button> */}
               </div>
             )}
           </div>
@@ -98,6 +123,17 @@ function First() {
         />
       </div>
     </div>
+    <GoogleLogin
+  onSuccess={credentialResponse => {
+    const decoded = jwt_decode(credentialResponse.credential);
+    console.log(decoded);
+  }}
+  onError={() => {
+    console.log('Login Failed');
+  }}
+/>
+    </GoogleOAuthProvider>
+
   );
 }
 
