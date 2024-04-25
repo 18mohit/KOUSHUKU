@@ -91,6 +91,7 @@ function Cart() {
       <div
         onClick={() => setActiveCart(!activeCart)}
         className="fixed bottom-[1vw] right-0 mr-[3vw] sm:text-[3vw] cursor-pointer"
+        id="cart_icon"
       >
         <div className="sm:w-[1.5vw] sm:h-[1.5vw] w-[4vw] h-[4vw] bg-red-800 rounded-full sm:-ml-[0.5vw] -ml-[0.9vw] -mb-[0.3vw] sm:text-[1vw] text-[4vw]">
           <h1 className="sm:pl-2 p-0">{totalQty}</h1>
