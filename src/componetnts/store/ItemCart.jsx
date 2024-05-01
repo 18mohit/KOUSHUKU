@@ -46,7 +46,7 @@ function ItemCart({ id, pname, price, src, qty }) {
               className="delete ml-[1vw] cursor-pointer"
               id="delete_cart"
             >
-              <MdDelete />
+              <MdDelete id="delete_icon"/>
             </h1>
             <div className="mt-[1vw] -ml-[1vw]">
               <h1 className="price text-green-700">₹{price}</h1>
