@@ -11,7 +11,6 @@ import { useState } from "react";
 
 function First() {
   // this is log in
-  // const { loginWithRedirect, logout, isAuthenticated } = useAuth0();
   const [islogin, setIslogin] = useState(false);
   console.log("islogin", islogin);
   return (
@@ -67,7 +66,7 @@ function First() {
               {islogin ? (
                 <div>
                   <button
-                    // className="b2 bg-gray-900 w-[25vw] sm:w-[8vw] rounded-xl border text-white p-3"
+                    className="logout b2 bg-gray-900 w-[25vw] sm:w-[8vw] rounded-xl border text-white p-3"
                     onClick={() => {
                       setIslogin(false);
                     }}
@@ -77,11 +76,13 @@ function First() {
                 </div>
               ) : (
                 <div>
-                  <GoogleLogin
-                    className="b2 bg-gray-900 w-[25vw] sm:w-[8vw] rounded-xl border text-white p-3"
+                  <GoogleLogin                    
+                    className="login b2 bg-gray-900 w-[25vw] sm:w-[8vw] rounded-xl border text-white p-3"
+                    
                     onSuccess={(credentialResponse) => {
                       const decoded = jwtDecode(credentialResponse.credential);
                       console.log(decoded);
+                      console.log(decoded.name);
                       setIslogin(true);
                     }}
                     onError={() => {

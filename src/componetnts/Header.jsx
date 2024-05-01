@@ -2,11 +2,15 @@ import React, { useState } from "react";
 import { GrMenu } from "react-icons/gr";
 import { FaAngleDown } from "react-icons/fa6";
 import { Link, NavLink } from "react-router-dom";
-import StoreHome from "./store/StoreHome";
-import { useAuth0 } from "@auth0/auth0-react";
+// import { islogin } from '/src/componetnts/First.jsx';
+// import { islogin } from '../First';
 
-function Header() {
-  const { isAuthenticated, user } = useAuth0();
+
+function Header({decoded,islogin}) {
+  // const { isAuthenticated, user } = useAuth0();
+  // const [islogin, setIslogin] = useState(false);
+
+  console.log("islogin from header", islogin);
 
   const [isMenuOpen, setIsMenuOpen] = useState(true);
   const toggleMenu = () => {
@@ -126,11 +130,18 @@ function Header() {
           >
             ABOUT US
           </NavLink>
-          <li className="mt-[0.6vw] absolute right-0 text-cyan-500">
-            {/* <img src={user.profile} alt="" /> */}
-            {isAuthenticated && <p>Uid: {user.name}</p>}
-          </li>
+          {/* <li className="mt-[0.6vw] absolute right-10 text-cyan-500">
+          {islogin && decoded ? (
+              <div>
+                
+                <p>Uid: {decoded.name}</p>
+                <br />
+                <img src={decoded.picture} alt="img" />
+              </div>
+            ):<p>"error"</p>}
+          </li> */}
         </ul>
+          
         <li className={`${isMenuOpen ? "sm:hidden block" : "hidden"}`}>
           {/* Your menu items for mobile view */}
         </li>
