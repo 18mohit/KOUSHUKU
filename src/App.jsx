@@ -11,6 +11,10 @@ import StoreHome from "./componetnts/store/StoreHome";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import BranchHome from "./componetnts/OurBranch/BranchHome";
 import Ahome from "./componetnts/About_us/Ahome";
+import ReactGA from "react-ga";
+
+const MID = "G-W7VPGM1508";
+ReactGA.initialize(MID);
 
 function App() {
   return (

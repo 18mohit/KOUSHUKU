@@ -9,8 +9,13 @@ import { ToastContainer, toast, Bounce } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
+// import ReactGA from "react-ga";
+
 
 function AdmiForm() {
+
+
+
   const [isadmiimg, setIsadmiimg] = useState();
   const [saveData, setSaveData] = useState({});
   const [allSubmissions, setAllSubmissions] = useState([]);

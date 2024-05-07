@@ -7,6 +7,11 @@ import ReactGA from 'react-ga';
 
 
 function StoreHome() {
+
+  useEffect (() => {
+    ReactGA.pageview(window.location.pathname)
+  }, []);
+
   const [items, setItems] = useState([]);
 
   useEffect(() => {
@@ -17,6 +22,13 @@ function StoreHome() {
   }, []);
 
   const filterItems = (e) => {
+    ReactGA.e({
+      category: e.pname,
+      action: "test_action",
+      label: "test_lable",
+      value: e.price,
+    });
+
     const newItems = StoreData.filter((newval) => newval.category === e);
     setItems(newItems);
   };
@@ -24,7 +36,6 @@ function StoreHome() {
 // add E-commerce tracking code
   return (
     <>
-
       <div>
         <div>
           <Button
