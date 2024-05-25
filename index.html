@@ -4,10 +4,7 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="lg.jpeg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="google-signin-client_id"
-      content="koushuku67127.apps.googleusercontent.com"
-    />
+    <meta name="google-signin-client_id" content="koushuku67127.apps.googleusercontent.com" />
     <title>KOUSHUKU</title>
     <!-- Google Tag Manager -->
     <script>
@@ -26,20 +23,18 @@
   </head>
   <body>
     <!-- Google Tag Manager (noscript) -->
-    <noscript
-      ><iframe
+    <noscript>
+      <iframe
         src="https://www.googletagmanager.com/ns.html?id=GTM-MHN8F3GD"
         height="0"
         width="0"
         style="display: none; visibility: hidden"
-      ></iframe
-    ></noscript>
+      ></iframe>
+    </noscript>
     <!-- End Google Tag Manager (noscript) -->
+
     <!-- Google tag (gtag.js) -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-GRG209WH4E"
-    ></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GRG209WH4E"></script>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
     <!-- <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=places&callback=initMap" async defer></script> -->
@@ -48,15 +43,12 @@
       document.addEventListener("click", function (event) {
         if (event.target.tagName === "BUTTON") {
           console.log(event);
-          // Declare gtag as a function or variable
-          // Here we use let to declare gtag as a variable
           let gtag =
             window.gtag ||
             function () {
               /* dummy function */
             };
 
-          // Call gtag event tracking function
           gtag("event", "click_on_GetStart", {
             event_category: "Button Click",
             event_label: event.target.innerText,
