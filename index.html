@@ -38,25 +38,6 @@
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
     <!-- <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=places&callback=initMap" async defer></script> -->
-
-    <script>
-      document.addEventListener("click", function (event) {
-        if (event.target.tagName === "BUTTON") {
-          console.log(event);
-          let gtag =
-            window.gtag ||
-            function () {
-              /* dummy function */
-            };
-
-          gtag("event", "click_on_GetStart", {
-            event_category: "Button Click",
-            event_label: event.target.innerText,
-            event_offset: event.target.offsetTop,
-          });
-        }
-      });
-    </script>
     <!-- log in script  -->
     <script src="https://apis.google.com/js/platform.js" async defer></script>
   </body>
