@@ -28,7 +28,6 @@ function App() {
           <Route path="/StoreHome" element={<StoreHome />} />
           <Route path="/OurBranch" element={<BranchHome />} />
           <Route path="/AboutUS" element={< Ahome/>} />
-
         </Routes>
         <Footer />
       </BrowserRouter>
