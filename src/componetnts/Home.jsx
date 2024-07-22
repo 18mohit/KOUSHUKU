@@ -1,5 +1,4 @@
 import React from "react";
-// import First from "./First";
 import First from "./First";
 import Second from "./Homes/Second";
 import Numbers from "./Homes/Numbers";
